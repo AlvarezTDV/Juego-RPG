@@ -11,6 +11,6 @@ Heroe :: Heroe(string nombre) {
 int Heroe::mover() {
 	srand(time(0));
 	int probabilidad;
-	probabilidad = 1 + rand() % 100; //GENERA UN VALOR ENTRE 1 Y 100
+	probabilidad = 1 + rand() % 10; //GENERA UN VALOR ENTRE 1 Y 100
 	return probabilidad;
 }

@@ -4,7 +4,7 @@
 using namespace std;
 
 void caminar(Heroe jugador) {
-	if (jugador.mover() <= 30) {
+	if (jugador.mover() <= 3) {
 		cout << "Aparece un mounstruo !!!" << endl;
 	}
 }
