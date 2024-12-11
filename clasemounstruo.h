@@ -1,6 +1,6 @@
 #ifndef CLASEMOUNSTRUO_H
 #define CLASEMOUNSTRUO_H
-#include "clases.h"
+#include "clasepersonaje.h"
 #include <iostream>
 using namespace std;
 
@@ -13,12 +13,11 @@ class Mounstruo : public Personaje {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Mounstruo() : Personaje() {
-			raza = "SinRaza";
-		}
+		Mounstruo(string r, double s, double af, double arf, int n, double e);
 		
+		/*
 		virtual void soltarObjeto();
 		virtual void soltarExperiencia();
-		virtual void generarExperiencia();
+		virtual void generarExperiencia();*/
 };
 #endif

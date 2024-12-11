@@ -4,8 +4,13 @@
 #include <ctime>
 using namespace std;
 
-Heroe :: Heroe(string nombre) {
-	nombre = "SinNombre";
+Heroe::Heroe(string no, double s, double af, double arf, int n, double e):Personaje(s, af, arf, n, e){
+	nombre = no;
+}
+
+void Heroe::estadisticas() {
+	Personaje::estadisticas();
+	cout << "Nombre del Heroe: " << endl;
 }
 
 int Heroe::mover() {
