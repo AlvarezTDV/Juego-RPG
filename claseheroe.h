@@ -1,19 +1,21 @@
 #ifndef CLASEHEROE_H
 #define CLASEHEROE_H
-#include "clases.h"
+#include "clasepersonaje.h"
 #include <iostream>
 using namespace std;
 
 //CREACION DE LA CLASE HEROE (HERENCIA)
 class Heroe : public Personaje {
 	//ATRIBUTOS
-	private:
+	public:
 		string nombre;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Heroe(string nombre);
+		Heroe(string no, double s, double af, double arf, int n, double e);
+		
+		void estadisticas();
 		
 		int mover();
 		/*virtual void buscarObjetos();

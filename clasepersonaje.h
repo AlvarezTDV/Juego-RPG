@@ -6,7 +6,7 @@ using namespace std;
 //CREACION DE LA CLASE PERSONAJE
 class Personaje {
 	//ATRIBUTOS
-	private:
+	public:
 		double salud;
 		double ataqueFisico;
 		double armaduraFisica;
@@ -16,16 +16,10 @@ class Personaje {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Personaje() {
-			salud = 100;
-			ataqueFisico = 10;
-			armaduraFisica = 3;
-			nivel = 0;
-			experiencia = 0;
-		}
+		Personaje(double s, double af, double arf, int n, double e);
 		
-		double atacar(double ataqueFisico) {
-			return ataqueFisico;
-		}
+		void estadisticas();
+		
+		double atacar(double ataqueFisico);
 };
 #endif
