@@ -10,6 +10,7 @@
 
 extern double saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual, dineroActual;
 extern int nivelActual;
+extern Objeto mochilaActual[20];
 extern Tienda tienda;
 extern Heroe jugador;
 extern Mounstruo bestiaSalvaje;

@@ -69,7 +69,7 @@ int main() {
 					archivosa<< armaduraFisicaActual << '\n';
 					archivosa<< experienciaActual << '\n';
 					archivosa.close();
-					cout<<"Se guardó la partida existosamente"<<endl;
+					cout<<"Se guarda la partida existosamente"<<endl;
 				}else{
 					cout<< "Error al guardar partida."<<endl;
 				}

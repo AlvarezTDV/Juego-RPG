@@ -4,6 +4,8 @@
 using namespace std;
 
 void mostrarObjetosTienda();
+void comprarUnObjeto(Heroe&, Objeto[], int);
+void eleccionObjeto(Objeto[], Heroe&, int);
 /*void mostrarObjetos();
 virtual void venderObjetosAlHeroe();*/
 	
