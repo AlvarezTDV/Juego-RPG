@@ -4,9 +4,9 @@
 #include <ctime>
 using namespace std;
 
-Mounstruo bestiaSalvaje("Bestia", 50, 10, 2, 10);
-Mounstruo muertoViviente("Zombi", 100, 20, 5, 20);
-Mounstruo demonio("Demonio", 150, 30, 10, 40);
+Mounstruo bestiaSalvaje("Bestia", 50, 10, 2, 10, 5);
+Mounstruo muertoViviente("Zombi", 100, 20, 5, 20, 10);
+Mounstruo demonio("Demonio", 150, 30, 10, 40, 20);
 
 //FUNCION QUE SIRVE COMO TRANSICION
 void contadorTiempo() {
