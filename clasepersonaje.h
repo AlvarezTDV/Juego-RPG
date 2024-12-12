@@ -8,18 +8,17 @@ class Personaje {
 	//ATRIBUTOS
 	public:
 		double salud;
+		double saludTotal;
 		double ataqueFisico;
 		double armaduraFisica;
-		int nivel;
 		double experiencia;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Personaje(double s, double af, double arf, int n, double e);
+		Personaje(double s, double af, double arf, double e);
 		
 		void estadisticas();
-		
-		double atacar(double ataqueFisico);
+		double atacar();
 };
 #endif

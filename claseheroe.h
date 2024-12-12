@@ -8,16 +8,19 @@ using namespace std;
 class Heroe : public Personaje {
 	//ATRIBUTOS
 	public:
+		int nivel;
 		string nombre;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Heroe(string no, double s, double af, double arf, int n, double e);
+		Heroe(string no, int n, double s, double af, double arf, double e);
 		
 		void estadisticas();
-		
 		int mover();
+		bool puedeSubirNivel();
+		void subirNivel();
+		
 		/*virtual void buscarObjetos();
 		virtual void ComprarObjetos();
 		virtual void venderObjetos();

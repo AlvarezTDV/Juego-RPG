@@ -7,14 +7,15 @@ using namespace std;
 //CREACION DE LA CLASE MOUNSTRUO (HERENCIA)
 class Mounstruo : public Personaje {
 	//ATRIBUTOS
-	private:
+	public:
 		string raza;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Mounstruo(string r, double s, double af, double arf, int n, double e);
+		Mounstruo(string r, double s, double af, double arf, double e);
 		
+		void estadisticas();
 		/*
 		virtual void soltarObjeto();
 		virtual void soltarExperiencia();

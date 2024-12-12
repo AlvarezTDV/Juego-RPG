@@ -4,8 +4,14 @@
 #include <ctime>
 using namespace std;
 
-Mounstruo::Mounstruo(string r, double s, double af, double arf, int n, double e):Personaje(s, af, arf, n, e) {
+Mounstruo::Mounstruo(string r, double s, double af, double arf, double e):Personaje(s, af, arf, e) {
 	raza = r;
 }
+
+void Mounstruo::estadisticas() {
+	Personaje::estadisticas();
+	cout << "Raza del mounstruo: " << raza << endl;
+}
+
 
 
