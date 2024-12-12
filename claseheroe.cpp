@@ -66,3 +66,30 @@ int Heroe::verificarMochilaLLena() {
 	}
 	return -1;
 }
+
+void Heroe::aplicarObjetos() {
+	for (int i = 0; i < 20; i++) {
+		if (mochila[i].nombreObjeto != "") {
+			salud = salud + mochila[i].bonoDeSalud;
+			saludTotal = saludTotal + mochila[i].bonoDeSalud;
+			ataqueFisico = ataqueFisico + mochila[i].bonoDeAtaqueFisico;
+			armaduraFisica = armaduraFisica + mochila[i].bonoDeArmaduraFisica;
+		}
+	}
+}
+
+void Heroe::aplicarObjeto(Objeto objetoConseguido) {
+	salud = salud + objetoConseguido.bonoDeSalud;
+	saludTotal = saludTotal + objetoConseguido.bonoDeSalud;
+	ataqueFisico = ataqueFisico + objetoConseguido.bonoDeAtaqueFisico;
+	armaduraFisica = armaduraFisica + objetoConseguido.bonoDeArmaduraFisica;
+}
+
+void Heroe::descansar() {
+	if (salud <= (saludTotal * 0.5)) {
+		salud = salud + saludTotal * 0.5;
+		cout << "Descansaste y recuperaste vida!!!" << endl;
+	} else {
+		cout << "No es necesario descansar, aun tienes vida" << endl;
+	}
+}

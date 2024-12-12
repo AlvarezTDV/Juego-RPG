@@ -23,11 +23,8 @@ class Heroe : public Personaje {
 		bool puedeSubirNivel();
 		void subirNivel();
 		int verificarMochilaLLena();
-		
-		/*virtual void buscarObjetos();
-		virtual void ComprarObjetos();
-		virtual void venderObjetos();
-		virtual void recogerObjetos();
-		virtual void agregarExperiencia();*/
+		void aplicarObjetos();
+		void aplicarObjeto(Objeto objetoConseguido);
+		void descansar();
 };
 #endif

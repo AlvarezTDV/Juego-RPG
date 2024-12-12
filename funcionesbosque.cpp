@@ -40,7 +40,6 @@ void peleaConMounstruo(Heroe& jugador, Mounstruo mounstruo) {
 		cout << "Tu salud: " << jugador.salud << endl;
 		cout << "Salud del mounstruo: " << mounstruo.salud << endl;
 		cout << "1. Ataca" << endl;
-		cout << "2. Usar Objeto" << endl;
 		cin >> opcion;
 		
 		system("cls");
@@ -53,8 +52,6 @@ void peleaConMounstruo(Heroe& jugador, Mounstruo mounstruo) {
 				cout << "Tu y el mounstruo se atacaron" << endl;
 				system("pause");
 				system("cls");
-				break;
-			case 2:
 				break;
 			default:
 				break;
@@ -96,12 +93,8 @@ void caminar(Heroe& jugador, int opcion) {
 	system("cls");
 	contadorTiempo();
 	
-	if (jugador.mover() <= 5) {
+	if (jugador.mover() <= 7) {
 		cout << "Aparece un mounstruo !!!" << endl;
-		
-		bestiaSalvaje.estadisticas();
-		muertoViviente.estadisticas();
-		demonio.estadisticas();
 		
 		do {
 			cout << "Escoja que hacer: " << endl;

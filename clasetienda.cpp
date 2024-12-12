@@ -21,7 +21,3 @@ void Tienda::mostrarObjetos(Objeto rangoX[], int rango) {
 		cout << "Precio del objeto: " << rangoX[i].precio << endl << endl;
 	}
 }
-
-/*void venderObjetosAlHeroe(){
-	
-}*/

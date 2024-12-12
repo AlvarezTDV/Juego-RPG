@@ -16,9 +16,5 @@ class Mounstruo : public Personaje {
 		Mounstruo(string r, double s, double af, double arf, double e, double d);
 		
 		void estadisticas();
-		/*
-		virtual void soltarObjeto();
-		virtual void soltarExperiencia();
-		virtual void generarExperiencia();*/
 };
 #endif
