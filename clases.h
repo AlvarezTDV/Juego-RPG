@@ -8,4 +8,7 @@
 #include "claseobjeto.h"
 #include "clasetienda.h"
 
+extern double saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual;
+extern int nivelActual;
+
 #endif
