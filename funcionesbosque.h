@@ -8,4 +8,5 @@ void contadorTiempo();
 void peleaConMounstruo(Heroe&, Mounstruo);
 void batalla(Heroe&, Mounstruo, Mounstruo, Mounstruo);
 void caminar(Heroe&, int);
+
 #endif

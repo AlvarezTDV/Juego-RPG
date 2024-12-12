@@ -6,9 +6,12 @@
 using namespace std;
 
 int main() {
-	int opcion1, opcion2, opcion3;
+	int opcion1, opcion2, opcion3, opcion4;
 	do {
-		cout << "Bienvenido!!" << endl;
+		cout << "+--------------------------+" << endl;
+  		cout <<	"¦        DRAGON'S         ¦" << endl;
+  		cout <<	"¦         LEGACY          ¦" << endl;
+  		cout <<	"+--------------------------+" << endl;
 		cout << "1. Jugar" << endl;
 		cout << "2. Cargar partida" << endl;
 		cout << "0. Salir" << endl;
@@ -29,7 +32,7 @@ int main() {
 					system("cls");
 					
 					cout << "Acciones: " << endl;
-					cout << "1. Pueblo" << endl;
+					cout << "1. Pueblo (ir a descansar)" << endl;
 					cout << "2. Tienda" << endl;
 					cout << "3. Bosque" << endl;
 					cout << "4. Cueva del dragon" << endl;
@@ -41,6 +44,8 @@ int main() {
 					
 					switch (opcion2) {
 						case 1:
+							jugador.descansar();
+							system("pause");
 							break;
 						case 2:
 							mostrarObjetosTienda();
@@ -49,6 +54,7 @@ int main() {
 							caminar(jugador, opcion3);
 							break;
 						case 4:
+							entrarALaCueva(jugador, opcion4);
 							break;
 						case 5:
 							jugador.estadisticas();
@@ -60,6 +66,7 @@ int main() {
 				} while (opcion2 != 0);
 				break;
 			case 2:
+				jugador.aplicarObjetos(); //CUANDO SE CARGUE LA PARTIDA
 				break;
 			case 0:
 				ofstream archivosa("partida.txt");

@@ -17,9 +17,7 @@ class Tienda {
 	public:
 		//CONSTRUCTOR
 		Tienda();
-		void mostrarObjetos(Objeto[], int);
 		
-		/*virtual void mostrarObjetos();
-		virtual void venderObjetosAlHeroe();*/
+		void mostrarObjetos(Objeto[], int);
 };
 #endif

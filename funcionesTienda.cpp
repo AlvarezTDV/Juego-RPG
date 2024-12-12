@@ -3,6 +3,7 @@
 #include "funciones.h"
 using namespace std;
 
+//FUNCION PARA MOSTRAR CADA OBJETO
 void mostrarObjetosTienda() {
 	int opcion;
 	cout << "// BIENVENIDO A LA TIENDA //" << endl;
@@ -92,6 +93,11 @@ void comprarUnObjeto(Heroe& jugador, Objeto rangoX[5], int numObjeto) {
 		} else {
 			jugador.dinero = jugador.dinero - rangoX[numObjeto].precio;
 			jugador.mochila[jugador.verificarMochilaLLena()] = rangoX[numObjeto];
+			jugador.aplicarObjeto(rangoX[numObjeto]);
+			system("cls");
+			cout << "Compra exitosa" << endl;
+			system("pause");
+			system("cls");
 		}
 	}
 }

@@ -18,7 +18,5 @@ class Objeto {
 		//CONSTRUCTOR
 		Objeto(string, double, double, double, double);
 		Objeto();
-		
-		//virtual void aplicarAtributos();
 };
 #endif

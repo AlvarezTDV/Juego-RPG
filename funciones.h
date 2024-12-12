@@ -4,5 +4,6 @@
 //SE AGREGAN TODAS LAS FUNCIONES PARA TENERLAS EN UNA SOLA CABECERA
 #include "funcionesbosque.h"
 #include "funcionestienda.h"
+#include "funcionescueva.h"
 
 #endif
