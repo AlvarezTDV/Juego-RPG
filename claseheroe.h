@@ -1,6 +1,7 @@
 #ifndef CLASEHEROE_H
 #define CLASEHEROE_H
 #include "clasepersonaje.h"
+#include "claseobjeto.h"
 #include <iostream>
 using namespace std;
 
@@ -10,16 +11,18 @@ class Heroe : public Personaje {
 	public:
 		int nivel;
 		string nombre;
+		Objeto mochila[20];
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Heroe(string no, int n, double s, double af, double arf, double e, double d);
+		Heroe(string no, int n, Objeto m[], double s, double af, double arf, double e, double d);
 		
 		void estadisticas();
 		int mover();
 		bool puedeSubirNivel();
 		void subirNivel();
+		int verificarMochilaLLena();
 		
 		/*virtual void buscarObjetos();
 		virtual void ComprarObjetos();

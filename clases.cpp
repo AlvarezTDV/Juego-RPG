@@ -7,7 +7,8 @@ double armaduraFisicaActual = 5;
 double experienciaActual = 0;
 int nivelActual = 1;
 double dineroActual = 0;
-Heroe jugador("Arthas", nivelActual, saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual, dineroActual);
+Objeto mochilaActual[20];
+Heroe jugador("Arthas", nivelActual, mochilaActual, saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual, dineroActual);
 
 //MOUNSTRUOS
 Mounstruo bestiaSalvaje("Bestia", 50, 10, 2, 10, 5);
