@@ -51,10 +51,10 @@ void peleaConMounstruo(Heroe& jugador, Mounstruo mounstruo) {
 		
 		switch (opcion) {
 			case 1:
+				//SALUD QUE VA BAJANDO EN LA PELEA
 				mounstruo.salud = mounstruo.salud - (jugador.atacar() - mounstruo.armaduraFisica);
 				jugador.salud = jugador.salud - (mounstruo.atacar() - jugador.armaduraFisica);
 				cout << "Tu y el mounstruo se atacaron" << endl;
-				
 				system("pause");
 				system("cls");
 				break;
@@ -66,9 +66,14 @@ void peleaConMounstruo(Heroe& jugador, Mounstruo mounstruo) {
 	} while (jugador.salud > 0 && mounstruo.salud > 0);
 	if (jugador.salud <= 0) {
 		cout << "Fuiste derrotado..." << endl;
+		jugador.salud = jugador.saludTotal * 0.5;
 		system("pause");
 	} else {
 		cout << "Venciste al mounstruo..." << endl;
+		jugador.experiencia = jugador.experiencia + mounstruo.experiencia;
+		if(jugador.puedeSubirNivel() == true) {
+			jugador.subirNivel();
+		}
 		system("pause");
 	}
 }
