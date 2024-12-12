@@ -1,6 +1,8 @@
 #include "clases.h"
 #include "funciones.h"
 #include <iostream>
+#include <fstream>
+#include <string>
 using namespace std;
 
 double saludActual = 100;
@@ -66,6 +68,17 @@ int main() {
 			case 2:
 				break;
 			case 0:
+				ofstream archivosa("partida.txt");
+				if (archivosa.is_open()){
+					archivosa<< saludActual << '\n';
+					archivosa<< ataqueFisicoActual << '\n';
+					archivosa<< armaduraFisicaActual << '\n';
+					archivosa<< experienciaActual << '\n';
+					archivosa.close();
+					cout<<"Se guardó la partida existosamente"<<endl;
+				}else{
+					cout<< "Error al guardar partida."<<endl;
+				}
 				break;
 		}
 	} while (opcion1 != 0);
