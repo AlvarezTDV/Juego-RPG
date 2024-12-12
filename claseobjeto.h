@@ -10,18 +10,13 @@ class Objeto {
 		double bonoDeSalud;
 		double bonoDeAtaqueFisico;
 		double bonoDeArmaduraFisica;
-		double bonoDeExperiencia;
+		int bonoDeExperiencia;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Objeto() {
-			bonoDeSalud = 0;
-			bonoDeAtaqueFisico = 0;
-			bonoDeArmaduraFisica = 0;
-			bonoDeExperiencia = 0;
-		}
+		Objeto(double, double, double, int);
 		
-		virtual void aplicarAtributos();
+		//virtual void aplicarAtributos();
 };
 #endif

@@ -1,6 +1,7 @@
 #ifndef CLASETIENDA_H
 #define CLASETIENDA_H
 #include <iostream>
+#include "claseobjeto.h"
 using namespace std;
 
 //CREACION DE LA CLASE TIENDA
@@ -12,11 +13,11 @@ class Tienda {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Tienda() {
+		Tienda();
 			//objetosEnTienda[10] = 
-		}
 		
-		virtual void mostrarObjetos();
-		virtual void venderObjetosAlHeroe();
+		
+		/*virtual void mostrarObjetos();
+		virtual void venderObjetosAlHeroe();*/
 };
 #endif
