@@ -27,6 +27,7 @@ bool Heroe::puedeSubirNivel() {
 	double experienciaRequerida = nivel * 50;
 	if (experiencia >= experienciaRequerida) {
 		experiencia = experiencia - experienciaRequerida;
+		nivel++;
 		return true;
 	} else {
 		return false;
@@ -34,13 +35,9 @@ bool Heroe::puedeSubirNivel() {
 }
 
 void Heroe::subirNivel() {
-	switch (nivel) {
-		case 2: {
-			salud = salud + 20;
-			saludTotal = saludTotal + 20;
-			ataqueFisico = ataqueFisico + 2;
-			armaduraFisica = armaduraFisica + 1;
-			break;
-		}
-	}
+	saludTotal = saludTotal + 20;
+	salud = saludTotal;
+	ataqueFisico = ataqueFisico + 2;
+	armaduraFisica = armaduraFisica + 1;
+	cout << "Subiste de nivel!!!" << endl;
 }
