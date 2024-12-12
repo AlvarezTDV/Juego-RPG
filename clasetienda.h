@@ -7,15 +7,17 @@ using namespace std;
 //CREACION DE LA CLASE TIENDA
 class Tienda {
 	//ATRIBUTOS
-	private:
-		Objeto objetosEnTienda[10];
+	public:
+		Objeto objetosRango1EnTienda[5];
+		Objeto objetosRango2EnTienda[5];
+		Objeto objetosRango3EnTienda[5];
+		Objeto objetosRango4EnTienda[5];
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
 		Tienda();
-			//objetosEnTienda[10] = 
-		
+		void mostrarObjetos(Objeto[], int);
 		
 		/*virtual void mostrarObjetos();
 		virtual void venderObjetosAlHeroe();*/

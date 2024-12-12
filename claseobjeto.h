@@ -6,16 +6,18 @@ using namespace std;
 //CREACION DE LA CLASE OBJETO
 class Objeto {
 	//ATRIBUTOS
-	private:
+	public:
+		string nombreObjeto;
 		double bonoDeSalud;
 		double bonoDeAtaqueFisico;
 		double bonoDeArmaduraFisica;
-		int bonoDeExperiencia;
+		double precio;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Objeto(double, double, double, int);
+		Objeto(string, double, double, double, double);
+		Objeto();
 		
 		//virtual void aplicarAtributos();
 };

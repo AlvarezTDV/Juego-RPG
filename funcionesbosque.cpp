@@ -4,10 +4,6 @@
 #include <ctime>
 using namespace std;
 
-Mounstruo bestiaSalvaje("Bestia", 50, 10, 2, 10, 5);
-Mounstruo muertoViviente("Zombi", 100, 20, 5, 20, 10);
-Mounstruo demonio("Demonio", 150, 30, 10, 40, 20);
-
 //FUNCION QUE SIRVE COMO TRANSICION
 void contadorTiempo() {
 	time_t inicio = time(0);
@@ -64,14 +60,20 @@ void peleaConMounstruo(Heroe& jugador, Mounstruo mounstruo) {
 				break;
 		}
 	} while (jugador.salud > 0 && mounstruo.salud > 0);
+	
+	//COMPROBACION PARA SUBIR DE EXPERIENCIA
 	if (jugador.salud <= 0) {
 		cout << "Fuiste derrotado..." << endl;
 		jugador.salud = jugador.saludTotal * 0.5;
 		system("pause");
 	} else {
 		cout << "Venciste al mounstruo..." << endl;
+		//SUBIDA DE EXPERIENCIA
 		jugador.experiencia = jugador.experiencia + mounstruo.experiencia;
+		//SUBIDA DE DINERO
+		jugador.dinero = jugador.dinero + mounstruo.dinero;
 		if(jugador.puedeSubirNivel() == true) {
+			//SUBIDA DE NIVEL
 			jugador.subirNivel();
 		}
 		system("pause");
