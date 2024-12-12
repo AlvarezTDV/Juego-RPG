@@ -12,11 +12,12 @@ class Personaje {
 		double ataqueFisico;
 		double armaduraFisica;
 		double experiencia;
+		double dinero;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Personaje(double s, double af, double arf, double e);
+		Personaje(double s, double af, double arf, double e, double d);
 		
 		void estadisticas();
 		double atacar();

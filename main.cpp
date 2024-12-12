@@ -5,13 +5,6 @@
 #include <string>
 using namespace std;
 
-double saludActual = 100;
-double ataqueFisicoActual = 15;
-double armaduraFisicaActual = 5;
-double experienciaActual = 0;
-int nivelActual = 1;
-Heroe jugador("Arthas", nivelActual, saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual);
-
 int main() {
 	int opcion1, opcion2, opcion3;
 	do {
@@ -50,6 +43,7 @@ int main() {
 						case 1:
 							break;
 						case 2:
+							mostrarObjetosTienda();
 							break;
 						case 3:
 							caminar(jugador, opcion3);

@@ -4,7 +4,7 @@
 #include <ctime>
 using namespace std;
 
-Heroe::Heroe(string no, int n, double s, double af, double arf, double e):Personaje(s, af, arf, e){
+Heroe::Heroe(string no, int n, double s, double af, double arf, double e, double d):Personaje(s, af, arf, e, d){
 	nivel = n;
 	nombre = no;
 }
@@ -13,7 +13,8 @@ void Heroe::estadisticas() {
 	Personaje::estadisticas();
 	cout << "Puntos de experiencia: " << experiencia << "/" << nivel*50 << endl;
 	cout << "Nivel actual: " << nivel << endl;
-	cout << "Nombre del Heroe: " << nombre << endl << endl;
+	cout << "Nombre del Heroe: " << nombre << endl;
+	cout << "Dinero: " << dinero << endl << endl;
 }
 
 int Heroe::mover() {

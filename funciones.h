@@ -3,6 +3,6 @@
 
 //SE AGREGAN TODAS LAS FUNCIONES PARA TENERLAS EN UNA SOLA CABECERA
 #include "funcionesbosque.h"
-#include "funcionesTienda.h"
+#include "funcionestienda.h"
 
 #endif

@@ -13,7 +13,7 @@ class Mounstruo : public Personaje {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Mounstruo(string r, double s, double af, double arf, double e);
+		Mounstruo(string r, double s, double af, double arf, double e, double d);
 		
 		void estadisticas();
 		/*
