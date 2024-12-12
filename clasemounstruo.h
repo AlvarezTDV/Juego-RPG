@@ -1,24 +1,24 @@
 #ifndef CLASEMOUNSTRUO_H
 #define CLASEMOUNSTRUO_H
-#include "clases.h"
+#include "clasepersonaje.h"
 #include <iostream>
 using namespace std;
 
 //CREACION DE LA CLASE MOUNSTRUO (HERENCIA)
 class Mounstruo : public Personaje {
 	//ATRIBUTOS
-	private:
+	public:
 		string raza;
 	
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Mounstruo() : Personaje() {
-			raza = "SinRaza";
-		}
+		Mounstruo(string r, double s, double af, double arf, double e);
 		
+		void estadisticas();
+		/*
 		virtual void soltarObjeto();
 		virtual void soltarExperiencia();
-		virtual void generarExperiencia();
+		virtual void generarExperiencia();*/
 };
 #endif
