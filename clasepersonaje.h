@@ -17,7 +17,7 @@ class Personaje {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Personaje(double s, double af, double arf, double e, double d);
+		Personaje(double s, double st, double af, double arf, double e, double d);
 		
 		void estadisticas();
 		double atacar();

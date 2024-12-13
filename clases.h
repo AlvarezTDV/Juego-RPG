@@ -2,13 +2,19 @@
 #define CLASES_H
 
 //SE AGREGAN TODAS LAS CLASES PARA TENERLAS EN UNA SOLA CABECERA
+#include <fstream>
 #include "clasepersonaje.h"
 #include "claseheroe.h"
 #include "clasemounstruo.h"
 #include "claseobjeto.h"
 #include "clasetienda.h"
 
-extern double saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual, dineroActual;
+extern double saludActual;
+extern double saludTotalActual;
+extern double ataqueFisicoActual;
+extern double armaduraFisicaActual;
+extern double experienciaActual;
+extern double dineroActual;
 extern int nivelActual;
 extern Objeto mochilaActual[20];
 extern Tienda tienda;
@@ -41,5 +47,7 @@ extern Objeto rango1[5];
 extern Objeto rango2[5];
 extern Objeto rango3[5];
 extern Objeto rango4[5];
+extern ofstream archivoDeGuardado;
+extern ifstream archivoDeCargado;
 
 #endif

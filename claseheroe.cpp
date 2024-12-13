@@ -5,7 +5,7 @@
 #include <ctime>
 using namespace std;
 
-Heroe::Heroe(string no, int n, Objeto m[20], double s, double af, double arf, double e, double d):Personaje(s, af, arf, e, d){
+Heroe::Heroe(string no, int n, Objeto m[20], double s, double st,double af, double arf, double e, double d):Personaje(s, st, af, arf, e, d){
 	nivel = n;
 	nombre = no;
 	for (int i = 0; i < 5; i++) {

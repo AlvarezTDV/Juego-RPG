@@ -16,7 +16,7 @@ class Heroe : public Personaje {
 	//FUNCIONES
 	public:
 		//CONSTRUCTOR
-		Heroe(string no, int n, Objeto m[], double s, double af, double arf, double e, double d);
+		Heroe(string no, int n, Objeto m[], double s, double st, double af, double arf, double e, double d);
 		
 		void estadisticas();
 		int mover();

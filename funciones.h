@@ -5,5 +5,6 @@
 #include "funcionesbosque.h"
 #include "funcionestienda.h"
 #include "funcionescueva.h"
+#include "funcionesarchivos.h"
 
 #endif

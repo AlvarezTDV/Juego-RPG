@@ -4,7 +4,7 @@
 #include <ctime>
 using namespace std;
 
-Mounstruo::Mounstruo(string r, double s, double af, double arf, double e, double d):Personaje(s, af, arf, e, d) {
+Mounstruo::Mounstruo(string r, double s, double st, double af, double arf, double e, double d):Personaje(s, st, af, arf, e, d) {
 	raza = r;
 }
 
