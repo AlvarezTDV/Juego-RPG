@@ -24,8 +24,8 @@ void peleaConDragon(Heroe& jugador, Mounstruo dragon) {
 		switch (opcion) {
 			case 1:
 				//SALUD QUE VA BAJANDO EN LA PELEA
-				dragon.salud = dragon.salud - (jugador.atacar() - dragon.armaduraFisica);
-				jugador.salud = jugador.salud - (dragon.atacar() - jugador.armaduraFisica);
+				dragon.salud = dragon.salud - (jugador.atacar() * (1 / (1 + (dragon.armaduraFisica / 10))));
+				jugador.salud = jugador.salud - (dragon.atacar() * (1 / (1 + (jugador.armaduraFisica / 10))));
 				cout << "Tu y el dragon se atacaron" << endl;
 				system("pause");
 				system("cls");
@@ -42,6 +42,8 @@ void peleaConDragon(Heroe& jugador, Mounstruo dragon) {
 		system("pause");
 	} else {
 		cout << "Venciste al dragon..." << endl;
+		cout << "FELICIDADES POR TERMINAR EL JUEGO!!!" << endl;
+		cout << "Puedes continuar con el juego" << endl;
 		system("pause");
 	}
 }

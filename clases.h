@@ -8,7 +8,12 @@
 #include "claseobjeto.h"
 #include "clasetienda.h"
 
-extern double saludActual, ataqueFisicoActual, armaduraFisicaActual, experienciaActual, dineroActual;
+extern double saludActual;
+extern double saludTotalActual;
+extern double ataqueFisicoActual;
+extern double armaduraFisicaActual;
+extern double experienciaActual;
+extern double dineroActual;
 extern int nivelActual;
 extern Objeto mochilaActual[20];
 extern Tienda tienda;

@@ -9,8 +9,8 @@ int main() {
 	int opcion1, opcion2, opcion3, opcion4;
 	do {
 		cout << "+--------------------------+" << endl;
-  		cout <<	"¦        DRAGON'S         ¦" << endl;
-  		cout <<	"¦         LEGACY          ¦" << endl;
+  		cout <<	"¦         DRAGON'S         ¦" << endl;
+  		cout <<	"¦          LEGACY          ¦" << endl;
   		cout <<	"+--------------------------+" << endl;
 		cout << "1. Jugar" << endl;
 		cout << "2. Cargar partida" << endl;
@@ -76,7 +76,7 @@ int main() {
 					archivosa<< armaduraFisicaActual << '\n';
 					archivosa<< experienciaActual << '\n';
 					archivosa.close();
-					cout<<"Se guarda la partida existosamente"<<endl;
+					cout<<"Se guarda la partida exitosamente"<<endl;
 				}else{
 					cout<< "Error al guardar partida."<<endl;
 				}

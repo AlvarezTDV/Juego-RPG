@@ -4,9 +4,9 @@
 #include <ctime>
 using namespace std;
 
-Personaje::Personaje(double s, double af, double arf, double e, double d) {
+Personaje::Personaje(double s, double st, double af, double arf, double e, double d) {
 	salud = s;
-	saludTotal = s;
+	saludTotal = st;
 	ataqueFisico = af;
 	armaduraFisica = arf;
 	experiencia = e;
