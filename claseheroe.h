@@ -22,7 +22,6 @@ class Heroe : public Personaje {
 		int mover();
 		bool puedeSubirNivel();
 		void subirNivel();
-		void subirNivelesAlCargarPartida(int nivel);
 		int verificarMochilaLLena();
 		void aplicarObjetos();
 		void aplicarObjeto(Objeto objetoConseguido);

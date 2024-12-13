@@ -66,20 +66,47 @@ int main() {
 				} while (opcion2 != 0);
 				break;
 			case 2:
-				jugador.aplicarObjetos(); //CUANDO SE CARGUE LA PARTIDA
+				cargarPartida(jugador, archivoDeCargado);
+				do {
+					system("cls");
+					
+					cout << "Acciones: " << endl;
+					cout << "1. Pueblo (ir a descansar)" << endl;
+					cout << "2. Tienda" << endl;
+					cout << "3. Bosque" << endl;
+					cout << "4. Cueva del dragon" << endl;
+					cout << "5. Estadisticas" << endl;
+					cout << "0. Salir al menu" << endl;
+					cin >> opcion2;
+					
+					system("cls");
+					
+					switch (opcion2) {
+						case 1:
+							jugador.descansar();
+							system("pause");
+							break;
+						case 2:
+							mostrarObjetosTienda();
+							break;
+						case 3:
+							caminar(jugador, opcion3);
+							break;
+						case 4:
+							entrarALaCueva(jugador, opcion4);
+							break;
+						case 5:
+							jugador.estadisticas();
+							system("pause");
+							break;
+						case 0:
+							break;
+					}
+				} while (opcion2 != 0);
 				break;
 			case 0:
-				ofstream archivosa("partida.txt");
-				if (archivosa.is_open()){
-					archivosa<< saludActual << '\n';
-					archivosa<< ataqueFisicoActual << '\n';
-					archivosa<< armaduraFisicaActual << '\n';
-					archivosa<< experienciaActual << '\n';
-					archivosa.close();
-					cout<<"Se guarda la partida exitosamente"<<endl;
-				}else{
-					cout<< "Error al guardar partida."<<endl;
-				}
+				cout << "Se guardo la partida exitosamente!!!" << endl;
+				guardarPartida(jugador, archivoDeGuardado);
 				break;
 		}
 	} while (opcion1 != 0);

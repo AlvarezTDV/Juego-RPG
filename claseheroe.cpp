@@ -58,13 +58,6 @@ void Heroe::subirNivel() {
 	cout << "Subiste de nivel!!!" << endl;
 }
 
-void Heroe::subirNivelesAlCargarPartida(int nivel) {
-	saludTotal = saludTotal + (20 * nivel);
-	salud = saludTotal;
-	ataqueFisico = ataqueFisico + (2 * nivel);
-	armaduraFisica = armaduraFisica + (1 * nivel);
-}
-
 int Heroe::verificarMochilaLLena() {
 	for (int i = 0; i < 20; i++) {
 		if (mochila[i].nombreObjeto == "") {

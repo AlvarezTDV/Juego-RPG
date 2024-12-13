@@ -2,6 +2,7 @@
 #define CLASES_H
 
 //SE AGREGAN TODAS LAS CLASES PARA TENERLAS EN UNA SOLA CABECERA
+#include <fstream>
 #include "clasepersonaje.h"
 #include "claseheroe.h"
 #include "clasemounstruo.h"
@@ -46,5 +47,7 @@ extern Objeto rango1[5];
 extern Objeto rango2[5];
 extern Objeto rango3[5];
 extern Objeto rango4[5];
+extern ofstream archivoDeGuardado;
+extern ifstream archivoDeCargado;
 
 #endif

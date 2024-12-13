@@ -1,4 +1,5 @@
 #include "clases.h"
+#include <fstream>
 
 //HEROE
 double saludActual = 100;
@@ -51,3 +52,7 @@ Objeto rango1[5] = {rango1objeto1, rango1objeto2, rango1objeto3, rango1objeto4, 
 Objeto rango2[5] = {rango2objeto1, rango2objeto2, rango2objeto3, rango2objeto4, rango2objeto5};
 Objeto rango3[5] = {rango3objeto1, rango3objeto2, rango3objeto3, rango3objeto4, rango3objeto5};
 Objeto rango4[5] = {rango4objeto1, rango4objeto2, rango4objeto3, rango4objeto4, rango4objeto5};
+
+//PARA GUARDAR Y CARGAR LAS PARTIDAS
+ofstream archivoDeGuardado;
+ifstream archivoDeCargado;
